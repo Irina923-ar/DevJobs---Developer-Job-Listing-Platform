@@ -78,7 +78,7 @@ const JobFilterDesktop = ({ jobs, onSearch }) => {
         />
         {/* TODO: merge the classes inside `btn-search` and `subttile-checkbox` */}
         {/* TODO: check if you have to do this in another places */}
-        <label for="checkbox" className="subtitle-checkbox text-primary-300 fs-200 fw-bold">
+        <label htmlFor="checkbox" className="subtitle-checkbox text-primary-300 fs-200 fw-bold">
           Full Time Only
         </label>
         <button className="btn-search text-secondary-100 bg-primary-100 fs-200 fw-bold" onClick={handleSearch}>

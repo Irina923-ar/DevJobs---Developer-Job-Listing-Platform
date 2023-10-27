@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-const BackdropPopup = ({ isVisible, onClosePopup, filters, onSearch }) => {
-  const [location, setLocation] = useState("");
-
-  const handleLocationChange = (event) => {
-    setLocation(event.target.value);
-  };
-
+const BackdropPopup = ({ isVisible, onClosePopup, filters, onSearch, handleInputChange }) => {
   const handlePopupSearch = () => {
     // Update the filters object with the new location
-    const updatedFilters = { ...filters, location };
+    // const updatedFilters = { ...filters };
+    // console.log(filters);
     // Call the onSearch function with updated filters
-    onSearch(updatedFilters);
+    onSearch(filters);
     // Close the popup
     onClosePopup();
   };
@@ -30,12 +25,18 @@ const BackdropPopup = ({ isVisible, onClosePopup, filters, onSearch }) => {
             className="input-location"
             type="text"
             placeholder="Filter by location..."
-            value={location}
-            onChange={handleLocationChange}
+            value={filters.value}
+            onChange={handleInputChange}
           />
         </div>
         <div className="checkbox-container">
-          <input name="checkbox" className="checkbox" type="checkbox" id="checkboxMobile" />
+          <input
+            className="checkbox"
+            name="fullTime"
+            checked={filters.fullTime}
+            onChange={handleInputChange}
+            type="checkbox"
+          />
           <label htmlFor="checkboxMobile" className="subtitle-checkbox">
             Full Time Only
           </label>
