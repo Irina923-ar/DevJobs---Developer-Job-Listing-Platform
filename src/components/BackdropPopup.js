@@ -16,8 +16,6 @@ const BackdropPopup = ({ isVisible, onClosePopup, filters, onSearch }) => {
     onClosePopup();
   };
 
-  console.log(onSearch);
-
   return (
     <div
       onClick={onClosePopup}
@@ -26,11 +24,7 @@ const BackdropPopup = ({ isVisible, onClosePopup, filters, onSearch }) => {
     >
       <div className="popup-content" onClick={(e) => e.stopPropagation()}>
         <div className="location">
-          <img
-            className="icon-location"
-            src="assets/desktop/icon-location.svg"
-            alt=""
-          />
+          <img className="icon-location" src="assets/desktop/icon-location.svg" alt="" />
           <input
             name="location"
             className="input-location"
@@ -41,20 +35,12 @@ const BackdropPopup = ({ isVisible, onClosePopup, filters, onSearch }) => {
           />
         </div>
         <div className="checkbox-container">
-          <input
-            name="checkbox"
-            className="checkbox"
-            type="checkbox"
-            id="checkboxMobile"
-          />
+          <input name="checkbox" className="checkbox" type="checkbox" id="checkboxMobile" />
           <label htmlFor="checkboxMobile" className="subtitle-checkbox">
             Full Time Only
           </label>
         </div>
-        <button
-          className="btn-search btn-search-filter"
-          onClick={handlePopupSearch}
-        >
+        <button className="btn-search btn-search-filter" onClick={handlePopupSearch}>
           Search
         </button>
       </div>
