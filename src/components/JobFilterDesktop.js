@@ -20,10 +20,14 @@ const JobFilterDesktop = ({ jobs, onSearch }) => {
         !filters.keyword ||
         job.position.toLowerCase().startsWith(filters.keyword.toLowerCase()) ||
         job.company.toLowerCase().startsWith(filters.keyword.toLowerCase()) ||
-        job.requirements.items.some((item) => item.toLowerCase().startsWith(filters.keyword.toLowerCase()));
+        job.requirements.items.some((item) =>
+          item.toLowerCase().startsWith(filters.keyword.toLowerCase())
+        );
 
       // -->Search: based on location
-      const locationMatch = !filters.location || job.location.toLowerCase().startsWith(filters.location.toLowerCase());
+      const locationMatch =
+        !filters.location ||
+        job.location.toLowerCase().startsWith(filters.location.toLowerCase());
 
       // -->Search: based on contract type
       const fullTimeMatch = !filters.fullTime || job.contract === "Full Time";
@@ -44,7 +48,11 @@ const JobFilterDesktop = ({ jobs, onSearch }) => {
   return (
     <div className="filter-desktop">
       <div className="search">
-        <img className="icon-search" src="assets/desktop/icon-search.svg" alt="" />
+        <img
+          className="icon-search"
+          src="assets/desktop/icon-search.svg"
+          alt=""
+        />
         <input
           onKeyUp={handleKeyPress}
           name="keyword"
@@ -56,7 +64,11 @@ const JobFilterDesktop = ({ jobs, onSearch }) => {
         />
       </div>
       <div className="location">
-        <img className="icon-location" src="assets/desktop/icon-location.svg" alt="" />
+        <img
+          className="icon-location"
+          src="assets/desktop/icon-location.svg"
+          alt=""
+        />
         <input
           onKeyUp={handleKeyPress}
           name="location"
@@ -76,12 +88,16 @@ const JobFilterDesktop = ({ jobs, onSearch }) => {
           id="checkbox"
           type="checkbox"
         />
-        {/* TODO: merge the classes inside `btn-search` and `subttile-checkbox` */}
-        {/* TODO: check if you have to do this in another places */}
-        <label htmlFor="checkbox" className="subtitle-checkbox text-primary-300 fs-200 fw-bold">
+        <label
+          htmlFor="checkbox"
+          className="subtitle-checkbox text-primary-300 fs-200 fw-bold"
+        >
           Full Time Only
         </label>
-        <button className="btn-search text-secondary-100 bg-primary-100 fs-200 fw-bold" onClick={handleSearch}>
+        <button
+          className="btn-search text-secondary-100 bg-primary-100 fs-200 fw-bold"
+          onClick={handleSearch}
+        >
           Search
         </button>
       </div>
