@@ -299,6 +299,7 @@ body {
   transform: scale(1.7);
   margin: 10px;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 .subtitle-checkbox {
@@ -306,6 +307,7 @@ body {
   color: var(--clr-primary-text);
   font-size: var(--fs-200);
   font-weight: var(--fw-bold);
+  cursor: pointer;
 }
 
 .btn-search {
@@ -316,6 +318,7 @@ body {
   color: var(--clr-secondary-text);
   background-color: var(--clr-primary-100);
   font-weight: var(--fw-bold);
+  cursor: pointer;
 }
 
 .btn-search:hover {
@@ -355,6 +358,8 @@ body {
   border-radius: 10px;
   position: relative;
   display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .icon-company {
@@ -505,6 +510,7 @@ body {
   float: right;
   background-color: var(--clr-primary-100);
   color: var(--clr-secondary-100);
+  cursor: pointer;
 }
 
 .btn-apply:hover {
@@ -606,33 +612,9 @@ ol li:before {
   .jobs-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0px 10px;
     margin: 50px 30px;
   }
 
-  .filter-desktop {
-    margin: 0px 30px;
-  }
-
-  .header {
-    margin: 50px 30px;
-  }
-
-  .individual-page-header {
-    margin: 50px 30px;
-  }
-
-  .individual-page-container {
-    margin: 50px 30px;
-  }
-
-  .footer {
-    padding: 10px 30px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 481px) {
   .filter-desktop {
     display: none;
   }
@@ -661,10 +643,6 @@ ol li:before {
     margin: 15px 15px 15px 0px;
   }
 
-  .card {
-    margin-top: 49px;
-  }
-
   .icon-search {
     position: initial;
     transform: translateY(0%);
@@ -685,6 +663,29 @@ ol li:before {
     border-radius: 5px;
     border: none;
     margin: 10px;
+  }
+
+  .header {
+    margin: 50px 30px;
+  }
+
+  .individual-page-header {
+    margin: 50px 30px;
+  }
+
+  .individual-page-container {
+    margin: 50px 30px;
+  }
+
+  .footer {
+    padding: 10px 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 481px) {
+  .card {
+    margin-top: 49px;
   }
 
   .backdrop-popup {

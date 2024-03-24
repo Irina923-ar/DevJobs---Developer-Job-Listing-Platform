@@ -20,17 +20,18 @@ const FilterMobile = ({ jobs, onSearch }) => {
 
   const handleSearch = () => {
     const filteredJobs = jobs.filter((job) => {
-      // -->Check: position, company and requirments
       const keywordMatch =
         !filters.keyword ||
         job.position.toLowerCase().startsWith(filters.keyword.toLowerCase()) ||
         job.company.toLowerCase().startsWith(filters.keyword.toLowerCase()) ||
-        job.requirements.items.some((item) => item.toLowerCase().startsWith(filters.keyword.toLowerCase()));
+        job.requirements.items.some((item) =>
+          item.toLowerCase().startsWith(filters.keyword.toLowerCase())
+        );
 
-      // -->Search: based on location
-      const locationMatch = !filters.location || job.location.toLowerCase().startsWith(filters.location.toLowerCase());
+      const locationMatch =
+        !filters.location ||
+        job.location.toLowerCase().startsWith(filters.location.toLowerCase());
 
-      // -->Search: based on contract type
       const fullTimeMatch = !filters.fullTime || job.contract === "Full Time";
 
       return keywordMatch && locationMatch && fullTimeMatch;

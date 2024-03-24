@@ -13,8 +13,6 @@ function HomePage() {
     setFilteredJobs(jobsData);
   }, []);
 
-  console.log(jobs);
-
   const handleSearch = (filteredJobs) => {
     setFilteredJobs(filteredJobs);
   };
@@ -25,31 +23,33 @@ function HomePage() {
       <FilterMobile jobs={jobs} onSearch={handleSearch} />
       <div className="jobs-grid">
         {filteredJobs.map((job) => (
-          <div key={job.id} className="card">
-            <div
-              className="card-icon"
-              style={{ backgroundColor: job.logoBackground }}
-            >
-              <img className="icon-company" src={job.logo} alt="Company Logo" />
-            </div>
-            <div className="container">
-              <div className="subtitle text-secondary-400 fs-200">
-                {job.postedAt} . {job.contract}
-              </div>
-              <Link
-                to={`/individual-page/${job.id}`}
-                className="btn-title fs-300"
+          <Link className="card" to={`/individual-page/${job.id}`}>
+            <div key={job.id} className="card-2">
+              <div
+                className="card-icon"
+                style={{ backgroundColor: job.logoBackground }}
               >
-                {job.position}
-              </Link>
-              <div className="subtitle text-secondary-400 fs-200">
-                {job.company}
+                <img
+                  className="icon-company"
+                  src={job.logo}
+                  alt="Company Logo"
+                />
               </div>
-              <div className="country text-primary-100 fs-100">
-                {job.location}
+              <div className="container">
+                <div className="subtitle text-secondary-400 fs-200">
+                  {job.postedAt} . {job.contract}
+                </div>
+                <div className="btn-title fs-300">{job.position}</div>
+
+                <div className="subtitle text-secondary-400 fs-200">
+                  {job.company}
+                </div>
+                <div className="country text-primary-100 fs-100">
+                  {job.location}
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
