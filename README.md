@@ -1,34 +1,55 @@
-# Devjobs Project
 
-This is a simple devjobs project built using HTML, CSS, and JavaScript.
-![image](https://github.com/Irina923-ar/Devjobs-Project/assets/112747712/d1e83a4e-622f-4102-bda2-8015fe9fafca)
+# DevJobs - Developer Job Listing Platform
+
+## Description
+
+DevJobs is a modern, web-based platform designed to connect developers with their next opportunity. It aggregates job listings for developer positions, providing an intuitive and seamless way to search for jobs. With features like dark mode, advanced filtering options, and a mobile-friendly design, DevJobs aims to enhance the job search experience for developers across the globe.
+
+![INSERT SCREENSHOT HERE]
+
+## Live Demo
+
+Explore developer job listings on DevJobs: (https://devjobs-project-mu.vercel.app/)
+
 
 ## Features
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
+- **Dark Mode**: A user-friendly dark mode to reduce eye strain and enhance readability in low-light conditions.
+- **Filtering**: Advanced filtering options allow users to narrow down job listings based on keywords, location, experience level, and more.
+- **Mobile-Friendly Design**: A responsive design ensures that users can effortlessly navigate the platform on any device, offering a consistent and accessible experience whether on desktop, tablet, or smartphone.
 
-## Deployment
+![INSERT SCREENSHOT HERE]
 
-This project is deployed on Vercel and can be accessed at (https://devjobs-project-mu.vercel.app/).
+## Technologies Used
 
-## Author
+<img src="https://reactjs.org/logo-og.png" width="50" alt="React.js"> **React.js**
 
-- Galan Irina
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="50" alt="CSS3"> **CSS3**
 
-## Setup
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" width="50" alt="HTML5"> **HTML5**
 
-Clone this repo to your desktop and run npm install to install all the dependencies.
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="50" alt="JavaScript"> **JavaScript**
 
-You might want to look into config.json to make change the port you want to use and set up a SSL certificate.
+## Installation and Setup
+
+1. Clone the repository to your local machine:
+    ```
+    git clone https://github.com/yourusername/devjobs.git
+    ```
+2. Navigate to the project directory:
+    ```
+    cd devjobs
+    ```
+3. Install the necessary dependencies:
+    ```
+    npm install
+    ```
+4. To launch the platform, run:
+    ```
+    npm start
+    ```
+    This will start DevJobs on `localhost:3000`.
 
 ## Usage
 
-After you clone this repo to your desktop, go to its root directory and run npm install to install its dependencies.
-
-Once the dependencies are installed, you can run npm start to start the application. You will then be able to access it at localhost:3000
-
-To give yourself administrator permissions on the chat, you will have to type /role [your-name] in the app console.
-.
+After launching DevJobs, explore the latest developer job listings on the homepage. Use the filtering options to refine your search based on specific criteria. Toggle dark mode from the settings for a comfortable viewing experience in any lighting condition. The platform is designed to be intuitive and user-friendly, ensuring you can focus on finding the right job opportunities.
