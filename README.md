@@ -1,4 +1,3 @@
-
 # DevJobs - Developer Job Listing Platform
 
 ## Description
