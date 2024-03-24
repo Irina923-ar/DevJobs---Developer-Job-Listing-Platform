@@ -9,10 +9,6 @@ This is a simple devjobs project built using HTML, CSS, and JavaScript.
 - Subtraction
 - Multiplication
 - Division
-  
-## Usage
-
-To use this calculator, simply open the `index.html` file in a web browser.
 
 ## Deployment
 
@@ -35,8 +31,4 @@ After you clone this repo to your desktop, go to its root directory and run npm 
 Once the dependencies are installed, you can run npm start to start the application. You will then be able to access it at localhost:3000
 
 To give yourself administrator permissions on the chat, you will have to type /role [your-name] in the app console.
-
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+.
