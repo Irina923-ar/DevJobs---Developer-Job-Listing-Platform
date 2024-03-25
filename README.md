@@ -33,7 +33,7 @@ Explore developer job listings on DevJobs: (https://devjobs-project-mu.vercel.ap
 
 1. Clone the repository to your local machine:
     ```
-    git clone https://github.com/yourusername/devjobs.git
+    git clone (https://github.com/Irina923-ar/DevJobs-Developer-Job-Listing-Platform)
     ```
 2. Navigate to the project directory:
     ```
