@@ -1,11 +1,10 @@
-
 # DevJobs - Developer Job Listing Platform
 
 ## Description
 
 DevJobs is a modern, web-based platform designed to connect developers with their next opportunity. It aggregates job listings for developer positions, providing an intuitive and seamless way to search for jobs. With features like dark mode, advanced filtering options, and a mobile-friendly design, DevJobs aims to enhance the job search experience for developers across the globe.
 
-![INSERT SCREENSHOT HERE]
+![image](https://github.com/Irina923-ar/DevJobs-Developer-Job-Listing-Platform/assets/112747712/f5942e6c-4ff4-4db1-b388-9cafd7b336d2)
 
 ## Live Demo
 
@@ -18,7 +17,9 @@ Explore developer job listings on DevJobs: (https://devjobs-project-mu.vercel.ap
 - **Filtering**: Advanced filtering options allow users to narrow down job listings based on keywords, location, experience level, and more.
 - **Mobile-Friendly Design**: A responsive design ensures that users can effortlessly navigate the platform on any device, offering a consistent and accessible experience whether on desktop, tablet, or smartphone.
 
-![INSERT SCREENSHOT HERE]
+![image](https://github.com/Irina923-ar/DevJobs-Developer-Job-Listing-Platform/assets/112747712/9234d6c2-4fd0-420c-a788-3a77f4733f51)
+![image](https://github.com/Irina923-ar/DevJobs-Developer-Job-Listing-Platform/assets/112747712/26a51e35-8486-4052-8f84-1a7455d2a451)
+![image](https://github.com/Irina923-ar/DevJobs-Developer-Job-Listing-Platform/assets/112747712/c08156c2-1d1b-4efa-aed7-fc53947119e5)
 
 ## Technologies Used
 
@@ -34,7 +35,7 @@ Explore developer job listings on DevJobs: (https://devjobs-project-mu.vercel.ap
 
 1. Clone the repository to your local machine:
     ```
-    git clone https://github.com/yourusername/devjobs.git
+    git clone (https://github.com/Irina923-ar/DevJobs-Developer-Job-Listing-Platform)
     ```
 2. Navigate to the project directory:
     ```
