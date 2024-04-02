@@ -23,8 +23,8 @@ function HomePage() {
       <FilterMobile jobs={jobs} onSearch={handleSearch} />
       <div className="jobs-grid">
         {filteredJobs.map((job) => (
-          <Link className="card" to={`/individual-page/${job.id}`}>
-            <div key={job.id} className="card-2">
+          <Link key={job.id} className="card" to={`/individual-page/${job.id}`}>
+            <div className="card-2">
               <div
                 className="card-icon"
                 style={{ backgroundColor: job.logoBackground }}

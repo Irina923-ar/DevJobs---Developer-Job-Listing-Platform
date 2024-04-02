@@ -31,7 +31,7 @@ function IndividualPage() {
         </div>
         <div className="">
           <button className="btn-company">
-            <a href={job.website}>Company Site</a>
+            <a /* href={job.website} */>Company Site</a>
           </button>
         </div>
       </div>
@@ -46,7 +46,7 @@ function IndividualPage() {
           </div>
           <div>
             <button className="btn-apply">
-              <a href={job.apply}>Apply Now</a>
+              <a /* href={job.apply} */>Apply Now</a>
             </button>
           </div>
         </div>
@@ -87,7 +87,7 @@ function IndividualPage() {
             <div className="text-secondary-400 fs-200">So Digital Inc.</div>
           </div>
           <button className="btn-apply">
-            <a href={job.apply}>Apply Now</a>
+            <a /* href={job.apply} */>Apply Now</a>
           </button>
         </div>
       </div>

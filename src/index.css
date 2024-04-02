@@ -470,13 +470,14 @@ body {
   right: 35px;
   top: 30px;
   border-radius: 5px;
-  background: rgba(89, 100, 224, 0.1);
+  background: rgba(89, 100, 224, 0.8);
   border: none;
   padding: 15px 20px;
   border-radius: 5px;
   color: var(--clr-secondary-text);
   font-size: var(--fs-200);
   font-weight: var(--fw-bold);
+  cursor: pointer;
 }
 
 .btn-company a {
@@ -484,7 +485,7 @@ body {
 }
 
 .btn-company:hover {
-  background: rgba(89, 100, 224, 0.3);
+  background: rgba(89, 100, 224, 0.5);
 }
 
 .individual-page-container {
